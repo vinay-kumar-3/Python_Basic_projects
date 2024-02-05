@@ -27,7 +27,7 @@ def conversion(direction,text,shift):
             n = alphabet.index(i) + shift
         else:
             n = alphabet.index(i) - shift
-        if n > 25:
+        while n > 25:
             n -=26
         cipher_text+=alphabet[n]
     print("converted Text : ",cipher_text)
